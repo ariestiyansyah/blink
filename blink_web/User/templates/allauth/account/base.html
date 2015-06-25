@@ -1,0 +1,32 @@
+{% extends "bases/bootstrap-member.html" %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block content %}
+
+<div class=container>
+<h1>{% trans 'Preferences' %}</h1>
+
+<ul class="nav nav-tabs">
+  <li class="{% block account_nav_email %}{% endblock %}">
+    <a href="{% url 'account_email' %}">{% trans 'E-mail Address' %}</a>
+  </li>
+  <li class="{% block account_nav_change_password %}{% endblock %}">
+    <a href="{% url 'account_change_password' %}">{% trans 'Change Password' %}</a>
+  </li>
+</ul>
+{% block account_content %}
+{% endblock %}
+
+</div>
+
+{% endblock %}
+{#
+{% block appjs %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  {% block appjs_jquery %}
+  {% endblock %}
+{% endblock %}
+#}
+

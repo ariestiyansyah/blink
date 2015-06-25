@@ -9,7 +9,7 @@ Using Django-allauth and Twitter Bootstrap.
 
 2. Install a ``virtualenv`` and requirements:
 
-        $ cd demo
+        $ cd blink
         $ virtualenv dev-env
 		$ . dev-env/bin/activate
         $ pip install -r requirements.txt
